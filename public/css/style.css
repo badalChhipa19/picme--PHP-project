@@ -1,0 +1,77 @@
+/*
+---01typography system
+-font-size
+6 / 9 / 12 / 16 / 18 / 20 / 24 / 36 / 48 /  56 / 64
+
+-font-weight
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+-line-height
+p:1.5
+
+-letter-spacing
+  h1: -1px
+
+---02color
+-tint:  #FFE5D1,
+-main: #500C1F, #ff7c1a
+-shade: 
+
+-tint: #808589
+-grays: #495057 #343a40
+-shade: #212529
+
+---05shadow
+
+---06 border-radius
+- 9px /  4px
+
+---07whitespace
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 200 / 500
+
+max-width: 130rem, 
+
+*/
+:root {
+  --orange-main: #ff7c1a;
+  --red-main: #500c1f;
+  --font-main: #343a40;
+  --gray-light: #808589;
+  --gray-dark: #212529;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--font-main);
+}
+
+a:link,
+a:visited {
+  color: var(--font-main); /* Correct variable name */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.3);
+  background-color: antiquewhite;
+}
+
