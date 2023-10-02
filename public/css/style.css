@@ -36,12 +36,21 @@ p:1.5
 max-width: 130rem, 
 
 */
+
+/* *{
+  border: 2px solid red;
+} */
+
 :root {
   --orange-main: #ff7c1a;
+  --orange-main-rgb: 255, 124, 26;
   --red-main: #500c1f;
+  --red-main-rgb: 80, 12, 31;
   --font-main: #343a40;
   --gray-light: #808589;
   --gray-dark: #212529;
+  --bg-main: #ffe5d1;
+  --bg-main-rgb: 255, 229, 209;
 }
 
 html {
@@ -61,17 +70,15 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   color: var(--font-main);
+  position: relative;
 }
 
 a:link,
-a:visited {
-  color: var(--font-main); /* Correct variable name */
+a:active{
+  color: var(--red-main);
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  /* display: block; */
 }
-
-a:hover {
-  transform: scale(1.3);
-  background-color: antiquewhite;
+a:hover{
+  color: var(--orange-main);
 }
-
